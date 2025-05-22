@@ -1,9 +1,12 @@
+import LoginProvider from "./contexts/LoginContext";
 import Paths from "./routes/Paths";
 
 const App = () => {
   return (
     <>
-      <Paths />
+      <LoginProvider>
+        <Paths />
+      </LoginProvider>
     </>
   );
 }
