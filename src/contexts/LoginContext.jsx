@@ -14,7 +14,7 @@ const LoginProvider = ({ children }) => {
             setUsuario(JSON.parse(sessionStorage.getItem('usuario')))
 
         }
-    }, [])
+    }, [logado])
     return ( 
         <LoginContext.Provider value={{logado, setLogado, usuario}}>
             {children}
